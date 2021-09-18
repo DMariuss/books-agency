@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px){
+    #section-1 .row .panel{
+        position: initial;   /* <<<---- revenim la pozitia initiala (static) - reintroducem elementul in flow*/
+    }
+    #section-2 .cover{
+        background-position: -25vmin -18vmin;
+    }
+    #section-2 .numere .rect{
+        width: 10rem;
+        height: 8rem;
+    }
+    #section-2 .numere .rect h1{
+        font-size: 2rem;
+    }
+    #section-3 {
+        height: inherit;
+        padding: 10vmin;
+    }
+    #section-3 .col-sm-12 > h1{
+        padding: 6vmin 4vmin;
+    }
+    #section-3 .platform .col-md-6{
+        text-align: center !important;
+    }
+    #section-3 .desktop i{
+        font-size: 5vmin;
+    }
+    #section-4 .team{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #section-4 .carousel-inner{
+        width: 20em;
+    }
+}
+@media screen and (max-width: 425px){
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+}
