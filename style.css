@@ -1,326 +1,327 @@
 /* Mai jos este o alta varianta de a folosi fonturile in stilizare ...importandu-le */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster+Two:wght@400;700&family=Patua+One&family=Rubik:wght@300;400;500&family=Sniglet&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster+Two:wght@400;700&family=Patua+One&family=Rubik:wght@300;400;500&family=Sniglet&display=swap");
 
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-*, *::after, *::before{
-    box-sizing: inherit;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
 }
-:root{
-    /* variabile pentru fonturi */
-    --Snigle-font: 'Sniglet', cursive;
-    --Rubik-font: 'Rubik', sans-serif;
-    --Patua-font: 'Patua One', cursive;
-    --Lobster-font: 'Lobster Two', cursive;
-     --Acme-font: 'Acme', sans-serif;
-    /* alte variabile */
-    --bkg-color:linear-gradient(to bottom, #dd2476, #ff512f);
-    --light-black: #2e2c2caf;
-    --light-gray: rgba(255, 255, 255, 0.733);
-    --usual-color: #dd2476;
+:root {
+  /* variabile pentru fonturi */
+  --Snigle-font: "Sniglet", cursive;
+  --Rubik-font: "Rubik", sans-serif;
+  --Patua-font: "Patua One", cursive;
+  --Lobster-font: "Lobster Two", cursive;
+  --Acme-font: "Acme", sans-serif;
+  /* alte variabile */
+  --bkg-color: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-black: #2e2c2caf;
+  --light-gray: rgba(255, 255, 255, 0.733);
+  --usual-color: #dd2476;
 }
 
 /*    --------------Header --------------------------------------- */
-header{
-    background-color: var(--usual-color);
-    background-image: var(--bkg-color);  /* ---imaginea de fundal este un gradient de culoare --*/
+header {
+  background-color: var(--usual-color);
+  background-image: var(
+    --bkg-color
+  ); /* ---imaginea de fundal este un gradient de culoare --*/
 }
-header a{
-    /* font-family: var(--Acme-font); */
-    /* font-family: var(--Rubik-font); */
-    font-family: var(--Snigle-font);
-    /* font-family: var(--Patua-font); */
-    /* font-family: var(--Lobster-font); */
-    font-size: .9em;
-    color: whitesmoke;
+header a {
+  /* font-family: var(--Acme-font); */
+  /* font-family: var(--Rubik-font); */
+  font-family: var(--Snigle-font);
+  /* font-family: var(--Patua-font); */
+  /* font-family: var(--Lobster-font); */
+  font-size: 0.9em;
+  color: whitesmoke;
 }
-header a:hover{
-    color: black;
+header a:hover {
+  color: black;
 }
- .dropdown-content{
-    display: none;
-    position: absolute; /* l-am lasat automat in aer, cu index dat pt a iesi la suprafata */
-    z-index: 1;
-    min-width: 130px;
-    background: white;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, .2);
-    border-radius: .15em;
-
- }
- .dropdown-content a{
-     display: block;
-     color: var(--light-black);
-     padding: .8em 1.2em;
- }
- .dropdown-content a:hover{
-     background-color: #ddd;
-     text-decoration: none;
- }
-.dropdown:hover .dropdown-content{
-    display: block;
-
+.dropdown-content {
+  display: none;
+  position: absolute; /* l-am lasat automat in aer, cu index dat pt a iesi la suprafata */
+  z-index: 1;
+  min-width: 130px;
+  background: white;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.15em;
 }
-header .nav-item:last-child{
-    padding-right: 10em;
+.dropdown-content a {
+  display: block;
+  color: var(--light-black);
+  padding: 0.8em 1.2em;
 }
-header .nav-item{
-    padding: 1em;
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: none;
 }
-header .navbar-brand{
-    padding-left: 5em;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-header .row .col-md-5{
-    padding: 15vmin 2vmin;
+header .nav-item:last-child {
+  padding-right: 10em;
 }
-header .row .col-md-5 img{
-    max-width: 90%;
+header .nav-item {
+  padding: 1em;
+}
+header .navbar-brand {
+  padding-left: 5em;
+}
+header .row .col-md-5 {
+  padding: 15vmin 2vmin;
+}
+header .row .col-md-5 img {
+  max-width: 90%;
 }
 header .row .col-md-7 {
-    padding: 20vmin 1vmin;
-    padding-bottom: 35vmin;
-    font-family: var(--Patua-font);
-    color: rgb(238, 232, 232);
+  padding: 20vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--Patua-font);
+  color: rgb(238, 232, 232);
 }
-header .row .col-md-7 h6{
-    padding: 1vmin;
-    text-transform: uppercase;
-    color: var(--light-gray);
-    letter-spacing: .25em;
+header .row .col-md-7 h6 {
+  padding: 1vmin;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  letter-spacing: 0.25em;
 }
-header .row .col-md-7 h1{
-    font-size: 4rem;
-    padding: .2em 0;
-    font-weight: bold;
+header .row .col-md-7 h1 {
+  font-size: 4rem;
+  padding: 0.2em 0;
+  font-weight: bold;
 }
-header .row .col-md-7 p{
-    padding: 1em 3em;
+header .row .col-md-7 p {
+  padding: 1em 3em;
 }
-header .row .col-md-7 button{
-    border-radius: 2.5em;
-    font-weight: bold;
+header .row .col-md-7 button {
+  border-radius: 2.5em;
+  font-weight: bold;
 }
 
 /* ------------------------------Section 1 --------------------------------- */
 
 #section-1 {
-    padding: 20vmin 0;
-    scroll-margin-top: -1rem;
+  padding: 20vmin 0;
+  scroll-margin-top: -1rem;
 }
-#section-1 .row .col-md-6 .chill img{
-    border-radius: .2em;
-    opacity: .9;
-    max-width: 90%;
+#section-1 .row .col-md-6 .chill img {
+  border-radius: 0.2em;
+  opacity: 0.9;
+  max-width: 90%;
 }
-#section-1 .row .col-md-6:last-child{
-    position: relative;    
+#section-1 .row .col-md-6:last-child {
+  position: relative;
 }
-#section-1 .row .panel{
-    position: absolute;
-    z-index: 1;
-    top: 7vmin;
-    left: -18vmin;
-    padding: 10vmin 5vmin 15vmin 10vmin;
-    border-radius: .3em;
-    box-shadow: 0 20px 40px rgb(0, 0, 0, 0.2);
-    background-color: white;
-    text-align: left;
-    font-family: var(--Rubik-font);
+#section-1 .row .panel {
+  position: absolute;
+  z-index: 1;
+  top: 7vmin;
+  left: -18vmin;
+  padding: 10vmin 5vmin 15vmin 10vmin;
+  border-radius: 0.3em;
+  box-shadow: 0 20px 40px rgb(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: left;
+  font-family: var(--Rubik-font);
 }
 
-#section-1 .row .panel h1{
-    padding: .5em 0;
-    font-size: 2rem;
+#section-1 .row .panel h1 {
+  padding: 0.5em 0;
+  font-size: 2rem;
 }
-#section-1 .row .panel p{
-    font-size: .9em;
-    color: rgba(0, 0, 0, 0.6);
+#section-1 .row .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
 }
-#prices{
-    scroll-margin-top: 2rem;
+#prices {
+  scroll-margin-top: 2rem;
 }
 /* ----------------------------Section-2 ----------------------------------- */
-#section-2 .cover{
-    width: 100%;
-    height: 55vmin;
-    background: url(../Books_WebProject/Images/happy1.jpg);
-    /* de completat cu propr pt fixarea img de background */
-    background-position: -20rem -17rem;
-    background-size: 150%;
+#section-2 .cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(./Images/happy1.jpg);
+  /* de completat cu propr pt fixarea img de background */
+  background-position: -20rem -17rem;
+  background-size: 150%;
 }
-#section-2 .cover .content{
-    background-color: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 100%;
-    padding-top: 19vmin;
+#section-2 .cover .content {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding-top: 19vmin;
 }
-#section-2 .cover .content > h1{
-    font-family: var(--Lobster-font);
-    font-size: 6vmin;
-    color: whitesmoke;
+#section-2 .cover .content > h1 {
+  font-family: var(--Lobster-font);
+  font-size: 6vmin;
+  color: whitesmoke;
 }
-#section-2 .cover .content > p{
-    font-family: var(--Rubik-font);
-    font-size: 2vmin;
-    color: #e5e5e5;
+#section-2 .cover .content > p {
+  font-family: var(--Rubik-font);
+  font-size: 2vmin;
+  color: #e5e5e5;
 }
 
-#section-2 .numere .rect{
-    background-color: white;
-    width: 17rem;
-    height: 12rem;
-    margin: 1rem;
-    padding-top: 3em;
-    border-radius: .5em;
-    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.3);
-    position: relative;
-    z-index: 1;
+#section-2 .numere .rect {
+  background-color: white;
+  width: 17rem;
+  height: 12rem;
+  margin: 1rem;
+  padding-top: 3em;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
 }
-#section-2 .numere .rect h1{
-    font-size: 4rem;
-    color: tomato;
+#section-2 .numere .rect h1 {
+  font-size: 4rem;
+  color: tomato;
 }
-#section-2 .numere .rect p{
-        font-family: var(--Patua-font);
+#section-2 .numere .rect p {
+  font-family: var(--Patua-font);
 }
 #section-2 .numere {
-    margin-top: -10vmin;
+  margin-top: -10vmin;
 }
-#section-2 .purchase > h1{
-    margin-top: 10vmin;
-    margin-bottom: 1vmin;
-    font-family: var(--Lobster-font);
-    font-style: italic;
+#section-2 .purchase > h1 {
+  margin-top: 10vmin;
+  margin-bottom: 1vmin;
+  font-family: var(--Lobster-font);
+  font-style: italic;
 }
-#section-2 .purchase > p{
-    color: var(--light-black);
-    margin-bottom: 10vmin;
+#section-2 .purchase > p {
+  color: var(--light-black);
+  margin-bottom: 10vmin;
 }
-#section-2 .purchase .cards .card{
-    width: 20rem;
-    margin: 1.5vmin;
+#section-2 .purchase .cards .card {
+  width: 20rem;
+  margin: 1.5vmin;
 }
-#section-2 .purchase .cards div{
-    padding: 0;
-    margin: 0;
+#section-2 .purchase .cards div {
+  padding: 0;
+  margin: 0;
 }
-#section-2 .purchase .cards .card .title{
-    background: rgba(208, 241, 241, .2);
-    padding: 1rem 0;
-    font-size: 2vmin;
+#section-2 .purchase .cards .card .title {
+  background: rgba(208, 241, 241, 0.2);
+  padding: 1rem 0;
+  font-size: 2vmin;
 }
-#section-2 .purchase .cards .card .card-text{
-    padding: 2.5rem 3rem;
-    color: var(--light-black);
+#section-2 .purchase .cards .card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
 }
-#section-2 .purchase .cards .card .pricing{
-    background: rgba(208, 241, 241, .2);
-    border-top-right-radius: 10em;
-    border-top-left-radius: 10em;
+#section-2 .purchase .cards .card .pricing {
+  background: rgba(208, 241, 241, 0.2);
+  border-top-right-radius: 10em;
+  border-top-left-radius: 10em;
 }
-#section-2 .purchase .cards .card .pricing h1{
-    font-size: 5vmin;
-    padding: 1em 0.5em;
+#section-2 .purchase .cards .card .pricing h1 {
+  font-size: 5vmin;
+  padding: 1em 0.5em;
 }
 /* -----------------------------------Section 3---------------------------------------- */
 #section-3 {
-    height: 70vmin;
-    margin-top: 15vmin;
-    background: var(--bkg-color);
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bkg-color);
 }
-#section-3 .col-sm-12 > h1{
-    padding: 2em 0 0.5em 0;
-    color: whitesmoke;
-    font-size: 6vmin;
+#section-3 .col-sm-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
 }
 
 #section-3 .col-sm-12 > p {
-    padding: 0 4em;
-    padding-bottom: 4em;
-    color: var(--light-gray);
-    font-size: 2vmin;
+  padding: 0 4em;
+  padding-bottom: 4em;
+  color: var(--light-gray);
+  font-size: 2vmin;
 }
-#section-3 .desktop{
-    display: inline-block;
-    background: white;
-    border-radius: 3em;
-    padding: 1vmin 3vmin;
+#section-3 .desktop {
+  display: inline-block;
+  background: white;
+  border-radius: 3em;
+  padding: 1vmin 3vmin;
 }
-#section-3 .desktop h3{
-    font-size: 3vmin;
+#section-3 .desktop h3 {
+  font-size: 3vmin;
 }
-#section-3 .desktop p{
-    font-size: 1.5vmin;
+#section-3 .desktop p {
+  font-size: 1.5vmin;
 }
 /*  ------------------------------------Section 4---------------------------------------- */
 #section-4 {
-    scroll-margin-top: 3vmin;
+  scroll-margin-top: 3vmin;
 }
-#section-4 .container h1{
-    font-size: 5vmin;
-    margin-top: 10vmin;
-
+#section-4 .container h1 {
+  font-size: 5vmin;
+  margin-top: 10vmin;
 }
-#section-4 .team{
-    padding: 8vmin 3vmin;
+#section-4 .team {
+  padding: 8vmin 3vmin;
 }
-#section-4 .card{
-    width: 20rem;
-    margin-top: 8vmin;
+#section-4 .card {
+  width: 20rem;
+  margin-top: 8vmin;
 }
-#section-4 .card .card-text{
-    padding: .5em;
+#section-4 .card .card-text {
+  padding: 0.5em;
 }
-#section-4 .card .card-body > a{
-    font-size: 1.5em;
+#section-4 .card .card-body > a {
+  font-size: 1.5em;
 }
 /* #section-4 .carousel-item{
     padding-left: 3em;
 } */
-.border-radius{
-    border-radius: 340px;
-    width: 60%;
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
 }
-#section-4 #extr2{
-    max-height: 182px;
+#section-4 #extr2 {
+  max-height: 182px;
 }
-.w-40{
-    width: 40%;
+.w-40 {
+  width: 40%;
 }
 /*-----------------------------footer----------------------------------------- */
-footer{
-    background-color: rgba(0, 0, 0, .8);
-    padding: 10vmin 5vmin;
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10vmin 5vmin;
 }
-footer .author{
-    color: #ff512f;
+footer .author {
+  color: #ff512f;
 }
-footer input{
-    border: none !important;
+footer input {
+  border: none !important;
 }
-footer input::placeholder{
-    color: white !important;
+footer input::placeholder {
+  color: white !important;
 }
-footer .input-group .input-group-text{
-    background: var(--bkg-color);
-    border: none;
+footer .input-group .input-group-text {
+  background: var(--bkg-color);
+  border: none;
 }
-footer .social a{
-    margin-right: .8em;
-    color: var(--usual-color);
+footer .social a {
+  margin-right: 0.8em;
+  color: var(--usual-color);
 }
-footer .social a:hover{
-    color: var(--light-gray);
+footer .social a:hover {
+  color: var(--light-gray);
 }
 
 /* ----------Sticky class------------ */
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 9999;
-    transition: all 1.5s ease;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: all 1.5s ease;
 }
